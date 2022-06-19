@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* style of card containers */
+.card {
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: 800ms;
+    transform-style: preserve-3d; /* without it it will just mirror the frontside after rotation */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card:hover {
+    transform: rotateY(.5turn); /* rotate on hover */
+}
+
+.front,
+.back {
+    height: 350px;
+    position: absolute; /* This will position both side on top of each other */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.front {
+    padding: 20px;
+    -webkit-backface-visibility: hidden; /* needs to be added for the effect to work on Safari and iOS */
+    backface-visibility: hidden; /* will keep side hidden after rotation */
+    transform: rotateX(0deg);
+    background: #8d99ae;
+    color: #2b2d42;
+    border-radius: 10px;
+    border-bottom: 6px solid #2b2d42;
+    border-right: 6px solid #2b2d42;
+}
+
+.back {
+    padding: 20px;
+    -webkit-backface-visibility: hidden; /* needs to be added for the effect to work on Safari and iOS */
+    backface-visibility: hidden; /* will keep side hidden after rotation */
+    transform: rotateX(0deg);
+    background: #edf2f4;
+    color: #2b2d42;
+    border-radius: 10px;
+    border-top: 6px solid #2b2d42;
+    border-left: 6px solid #2b2d42;
+    transform: rotateY(.5turn);
+}
+
+/* link on back side for music band */
+a {
+    color: #8d99ae;
+}
+
+a:hover,
+a:focus {
+    color: #2b2d42;
+}
+
+/* style of images on both sides */
+.avatar {
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0.5px 0.5px #2b2d42;
+}
+
+.icons {
+    
+}
+
+footer {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
