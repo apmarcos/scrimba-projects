@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
-    <title>Unit Converter</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Unit Converter</title>
+    </head>
 
-<body>
-   <!-- Top/input/btns section -->
-   <div id="top">
-    <h3>Metric/Imperial unit conversion</h3>
-    <label><input id="input-el" type="number" value="0"></input></label>
-    <div = class="btn"> <!-- buttons display -->
-        <button class="btn-convert" id="convert-btn" onclick="convert()">CONVERT</button>
-        <button class="btn-reset" id="reset-btn" onclick="resetConversion()">RESET</button>
-    </div>
-</div>
+    <body>
+        <!-- Top/input/btns section -->
+        <div id="top">
 
-<!-- Bottom/conversion section -->
-<div id="bottom">
-    <p class="unit">Length (Meter/Feet)</p>
-    <p id="length-el">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
-    
-    <p class="unit">Volume (Liters/Gallons)</p>
-    <p id="volume-el">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
-    
-    <p class="unit">Mass (Kilograms/Pounds)</p>
-    <p id="mass-el">0 kilograms = 0.000 pouns | 0 pounds = 0.000 kilograms</p>
-    
-    <p class="unit">Temperature (Celcius/Farenheit)</p>
-    <p id="temp-el">0 celcius = 32 farenheit | 0 farenheit = -17.778 celsius</p>
-</div>
+            <h3>Metric/Imperial unit conversion</h3>
+            <label><input id="input-el" type="number" value="0"></input></label> <!-- add 'label' to make the input more accessible -->
 
-<!-- javascript --> 
-   <script src="index.js"></script> 
+            <div = class="btn"> <!-- buttons display -->
+                <button class="btn-convert" id="convert-btn" onclick="convert()">CONVERT</button>
+                <button class="btn-reset" id="reset-btn" onclick="resetConversion()">RESET</button>
+            </div>
+            
+        </div>
 
-</body>
+        <!-- Bottom/conversion section -->
+        <div id="bottom">
+
+            <p class="unit">Length (Meter/Feet)</p>
+            <p id="length-el">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+            
+            <p class="unit">Volume (Liters/Gallons)</p>
+            <p id="volume-el">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+            
+            <p class="unit">Mass (Kilograms/Pounds)</p>
+            <p id="mass-el">0 kilograms = 0.000 pouns | 0 pounds = 0.000 kilograms</p>
+            
+            <p class="unit">Temperature (Celcius/Farenheit)</p>
+            <p id="temp-el">0 celcius = 32 farenheit | 0 farenheit = -17.778 celsius</p>
+            
+        </div>
+
+        <!-- javascript --> 
+        <script src="index.js"></script> 
+
+    </body>
 
 </html>
