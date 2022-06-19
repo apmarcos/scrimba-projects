@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: #ffba49;
+}
+
+/*header section*/
+h1,
+h2,
+h3,
+h4,
+p {
+    color: #20a39e;
+    text-shadow: 1px 1px black;
+}
+
+#bday-age {
+    background: #ef5b5b;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bday-date {
+    background: #ef5b5b;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avatar {
+    width: 150px;
+    border-radius: 2220%;
+    border: 5px solid #ef5b5b;
+    margin-bottom: 10px;
+}
+/* End header section */
+
+/* gift section with hover effects, gif, and images */
+.gift-section {
+    margin: 5px 5px;
+}
+
+#gift {
+    margin: 0 auto;
+    width: 450px;
+    height: 400px;
+    background-size: cover;
+    border: 5px solid #ef5b5b;
+    border-radius: 5px;  
+}
+
+.gift1 {
+    background-image: url(images/gift-cover.jpg);
+}
+
+.gift1:hover {
+    background-image: url("https://media.giphy.com/media/o75ajIFH0QnQC3nCeD/giphy.gif");
+}
+
+.gift2 {
+    background-image: url(images/gift-cover.jpg);
+}
+
+.gift2:hover {
+    background-image: url("https://media.giphy.com/media/QTAVEex4ANH1pcdg16/giphy.gif");
+}
+
+.gift3 {
+    background-image: url(images/gift-cover.jpg);   
+}
+
+.gift3:hover {
+    background-image: url("https://media.giphy.com/media/1A5SOTla8ZHYKQ01yH/giphy.gif");
+}
+
+.gift4 {
+    background-image: url(images/gift-cover.jpg);    
+}
+
+.gift4:hover {
+    background-image: url(https://media.giphy.com/media/dUHdTk3tvry9NETa67/giphy.gif);
+}
+
+.gift5 {
+    background-image: url(images/gift-cover.jpg);
+}
+
+.gift5:hover {
+    background-image: url(https://media.giphy.com/media/r8I7tDl75QLfh2SkpE/giphy.gif);
+}
+/* end gift section */
+
+/* footer with link to scrimba course */
+.footer {
+    width: 450px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 17px;
+}
+
+a {
+    color: #ef5b5b;
+}
+
+a:hover {
+    color: #ffba49;
+    background: #20a39e;
+    padding: 1px 5px;
+}
